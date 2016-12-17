@@ -64,6 +64,7 @@ var runPrompt = function() {
         name: "id",
         type: "input",
         message: "Please enter in the ID that you would like to buy or Q to Stop!",
+        
         validate: function(value){
            if (value == ""){
                return false;
@@ -71,8 +72,10 @@ var runPrompt = function() {
            return true;
        }
 
-   },{
-
+   },
+        { when: function (response) {
+                        return response.id.toUpperCase() != 'Q';
+                    },
        name:"quantity",
        type: "input",
        message: "Please enter in how many you would like to buy!",
