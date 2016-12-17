@@ -1,0 +1,25 @@
+{
+  "name": "bamazon",
+  "version": "1.0.0",
+  "description": "UCF bootcamp homework SQL, NODE, and Amazon app",
+  "main": "B_Amazon.js",
+  "scripts": {
+    "test": "1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "allanacreech"
+  },
+  "keywords": [
+    "Nodejs",
+    "SQL",
+    "Amazon",
+    "app"
+  ],
+  "author": "Allana Creech",
+  "license": "ISC",
+  "dependencies": {
+    "cli-table": "^0.3.1",
+    "inquirer": "^2.0.0"
+  }
+}
